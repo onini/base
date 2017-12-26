@@ -1,0 +1,28 @@
+{
+    "name": "onini/base",
+    "description": "base system package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "太年轻",
+            "email": "tthd@163.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Onini\\Base\\": "src"
+        },
+        "files": [
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Onini\\Base\\Providers\\OniniServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    }
+}
