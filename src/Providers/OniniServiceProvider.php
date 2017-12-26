@@ -1,6 +1,6 @@
 <?php
 
-namespace One\Base\Providers;
+namespace onini\Base\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
