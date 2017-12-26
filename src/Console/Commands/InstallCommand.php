@@ -19,4 +19,14 @@ class InstallCommand extends Command
 	 * @var string
 	 */
 	protected $description = 'Install Onini System';
+
+	/**
+	 * Execute the console command.
+	 *
+	 * @return void
+	 */
+	public function handle()
+	{
+
+	}
 }

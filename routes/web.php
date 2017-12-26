@@ -2,7 +2,9 @@
 
 use Illuminate\Routing\Router;
 
-Route::group(['prefix' => 'admin'], function (Router $router) {
+$adminRoute = config('onini.admin_route');
+
+Route::group(['prefix' => $adminRoute], function (Router $router) use ($adminRoute) {
 	$router->get('/', function () {
 		return 'base system dashboard ' . \Constants::VERSION;
 	});

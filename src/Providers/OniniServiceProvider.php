@@ -25,6 +25,7 @@ class OniniServiceProvider extends ServiceProvider
 		}
 
 		// Register base providers
+		$this->app->register(ConsoleServiceProvider::class);
 		$this->app->register(RouteServiceProvider::class);
 	}
 
@@ -35,6 +36,8 @@ class OniniServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-
+		$this->publishes([
+			__DIR__ . '/../../config' => base_path('config')
+		], 'config');
 	}
 }
