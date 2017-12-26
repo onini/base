@@ -9,8 +9,7 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
-        "onini/users": "dev-master"
+        "php": ">=7.0"
     },
     "autoload": {
         "psr-4": {
